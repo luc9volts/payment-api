@@ -75,7 +75,7 @@ new Vue({
                 });
         },
         onGet: function (event) {
-            axios.get(vmodel.LocationLastPayment)
+            axios.get(this.LocationLastPayment)
                 .then(function (response) {
                     alert(JSON.stringify(response.data));
                 })
